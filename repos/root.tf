@@ -1,6 +1,6 @@
 terraform {}
 
 provider "github" {
-  owner = local.org_name
+  owner = data.terraform_remote_state.base.outputs.organization_name
   token = var.gh_token
 }

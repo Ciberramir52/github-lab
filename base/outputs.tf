@@ -3,6 +3,11 @@ output "organization_id" {
   value       = data.github_organization.current.id
 }
 
+output "organization_name" {
+  description = "The canonical text name/slug of the GitHub Organization"
+  value       = data.github_organization.current.orgname
+}
+
 output "teams_ids" {
   description = "A set of unique identifiers for all provisioned infrastructure teams"
   value = toset([
