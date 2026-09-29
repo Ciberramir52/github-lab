@@ -1,6 +1,6 @@
 terraform {}
 
 provider "github" {
-  owner = "{organization_name}"
+  owner = local.org_name
   token = var.gh_token
 }
