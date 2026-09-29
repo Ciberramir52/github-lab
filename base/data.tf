@@ -1,0 +1,1 @@
+data "github_organization_roles" "all_roles" {}
